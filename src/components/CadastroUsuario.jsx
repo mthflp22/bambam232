@@ -14,7 +14,8 @@ function CadastroUsuario({ onCadastro }) {
   const [usuario, setUsuario] = useState({
     nome: '',
     email: '',
-    idade: ''
+    idade: '',
+    sexo: ''
   });
 
   // Esta função é chamada quando o usuário digita algo
@@ -51,6 +52,16 @@ function CadastroUsuario({ onCadastro }) {
             label="Nome"
             name="nome"
             value={usuario.nome}
+            onChange={handleChange}
+            margin="normal"
+            required
+          />
+
+          <TextField
+            fullWidth
+            label="Sexo"
+            name="sexo"
+            value={usuario.sexo}
             onChange={handleChange}
             margin="normal"
             required

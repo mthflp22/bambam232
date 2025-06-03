@@ -27,6 +27,7 @@ function ListaUsuarios({ usuarios }) {
                 <TableCell>Nome</TableCell>
                 <TableCell>Email</TableCell>
                 <TableCell>Idade</TableCell>
+                <TableCell>Sexo</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
@@ -35,6 +36,7 @@ function ListaUsuarios({ usuarios }) {
                   <TableCell>{usuario.nome}</TableCell>
                   <TableCell>{usuario.email}</TableCell>
                   <TableCell>{usuario.idade}</TableCell>
+                  <TableCell>{usuario.sexo}</TableCell>
                 </TableRow>
               ))}
             </TableBody>
